@@ -7,14 +7,14 @@
   <body>
     <header class="catalog">
       <div class="container">
-        <div class="logo-index">
+        <a href="#" class="logo-index">
           <img src="http://placehold.it/150x100" alt="">
-        </div>
+        </a>
         <nav>
           <ul class="index-menu">
             <li><a href="#">СТУДИЯ</a></li>
             <li><a href="#">КЛИЕНТЫ</a></li>
-            <li><p>МАГАЗИН</p></li>
+            <li><span>МАГАЗИН</span></li>
             <li><a href="#">КОНТАКТЫ</a></li>
           </ul>
         </nav>
@@ -34,10 +34,10 @@
             <span class="point"></span>
           </div>
         </div>
-        <p>ОТ</p>
-        <div class="filter-value"><p>0</p></div>
-        <p>ДО</p>
-        <div class="filter-value"><p>15000</p></div>
+        <span>ОТ</span>
+        <span class="filter-value">0</span>
+        <span>ДО</span>
+        <span class="filter-value">15 000</span>
         <h2>СЕТКА:</h2>
         <input type="radio" name="type" id="adaptive" checked>
         <label for="adaptive">Адаптивная</label>
@@ -59,20 +59,22 @@
         <button type="button" class="result">ПОКАЗАТЬ</button>
       </section>
       <section class="result-templates">
-        <h2>СОРТИРОВАТЬ:</h2>
-        <input type="radio" name="sort" id="by-cost" checked>
-        <label for="by-cost">ПО ЦЕНЕ</label>
-        <input type="radio" name="sort" id="by-type">
-        <label for="by-type">ПО ТИПУ</label>
-        <input type="radio" name="sort" id="by-label">
-        <label for="by-label">ПО НАЗВАНИЮ</label>
-        <span class="sort-top"></span>
-        <span class="sort-down"></span>
+        <div class="sort-templates">
+          <h2>СОРТИРОВАТЬ:</h2>
+          <input type="radio" name="sort" id="by-cost" checked>
+          <label for="by-cost">ПО ЦЕНЕ</label>
+          <input type="radio" name="sort" id="by-type">
+          <label for="by-type">ПО ТИПУ</label>
+          <input type="radio" name="sort" id="by-label">
+          <label for="by-label">ПО НАЗВАНИЮ</label>
+          <span class="sort-top"></span>
+          <span class="sort-down"></span>
+        </div>
         <div class="template-demo">
           <img src="http://placehold.it/150x100" alt="">
           <div class="template-demo-checked">
             <h2>SEDONA</h2>
-            <p>Информационный сайт для туристов</p>
+            <span>Информационный сайт для туристов</span>
             <button class="template-btn">9 900 РУБ.</button>
           </div>
         </div>
