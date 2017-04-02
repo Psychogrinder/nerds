@@ -6,25 +6,39 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="index">
+    <header class="index-header">
       <div class="container">
-        <img  class="logo-index" src="http://placehold.it/150x100" alt="">
-        <nav>
-          <ul class="index-menu">
-            <li><a href="#">СТУДИЯ</a></li>
-            <li><a href="#">КЛИЕНТЫ</a></li>
-            <li><a href="#">МАГАЗИН</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="login" href="#">ВХОД</a>
+        <div class="upper clearfix">
+          <div class="logo">
+            <img  class="logo-index" src="img/nerds-logo.png" alt="">
+          </div>
+          <nav class="menu">
+            <ul class="index-menu">
+              <li><a href="#">СТУДИЯ</a></li>
+              <li><a href="#">КЛИЕНТЫ</a></li>
+              <li><a href="#">МАГАЗИН</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <div class="cart-block">
+            <a class="login" href="#">КОРЗИНА</a>
+          </div>
         </div>
         <div class="slider">
-          <div class="slide-first">
-            <span class="moto">Долго, дорого, скрупулезно.</span>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="slider-btn">УЗНАТЬ БОЛЬШЕ</a>
+          <div class="slide slide-first">
+            <div class="slider-left">
+              <span class="moto">Долго, дорого, скрупулезно.</span>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a href="#" class="btn slider-btn">УЗНАТЬ БОЛЬШЕ</a>
+            </div>
+          </div>
+          <div class="slide slide-second">
+
+          </div>
+          <div class="slide slide-third">
+
+          </div>
+          <div class="controls">
             <input type="radio" name="slider" checked>
             <input type="radio" name="slider">
             <input type="radio" name="slider">
@@ -32,28 +46,28 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="features">
-        <div class="feature web">
-          <img src="http://placehold.it/150x100" alt="">
+    <main class="container">
+      <section class="features clearfix">
+        <div class="feature-header web">
+          <img src="img/feature-image-1.jpg" alt="">
           <span class="features">ВЕБ-САЙТЫ</span>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#" type="button" class="web-btn">ЗАКАЗАТЬ</a>
+          <a href="#" class="btn web-btn">ЗАКАЗАТЬ</a>
         </div>
         <div class="feature app">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/feature-image-2.jpg" alt="">
           <span class="features">ПРИЛОЖЕНИЯ</span>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#" type="button" class="app-btn">ЗАКАЗАТЬ</a>
+          <a href="#" class="btn app-btn">ЗАКАЗАТЬ</a>
         </div>
         <div class="feature presentation">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/feature-image-3.jpg" alt="">
           <span class="features">ПРЕЗЕНТАЦИИ</span>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#" type="button" class="presentation-btn">ЗАКАЗАТЬ</a>
+          <a href="#" class="btn presentation-btn">ЗАКАЗАТЬ</a>
         </div>
       </section>
-      <section class="studio-description">
+      <section class="studio-description clearfix">
         <div class="left-block">
           <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h1>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -65,51 +79,57 @@
           </ul>
         </div>
         <div class="right-block">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/logo-image-main.png" alt="">
           <h2>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h2>
-          <div class="percent">
-            <span class="percent-fig">146%</span>
-            <p>Уровень самоотдачи</p>
-          </div>
-          <div class="percent">
-            <span class="percent-fig">100%</span>
-            <p>Соблюдение сроков</p>
-          </div>
-          <div class="percent">
-            <span class="percent-fig">50%</span>
-            <p>Предоплата</p>
+          <div class="percent-block clearfix">
+            <div class="percent">
+              <span class="percent-fig">146%</span>
+              <p>Уровень самоотдачи</p>
+            </div>
+            <div class="percent">
+              <span class="percent-fig">100%</span>
+              <p>Соблюдение сроков</p>
+            </div>
+            <div class="percent">
+              <span class="percent-fig">50%</span>
+              <p>Предоплата</p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="clients-list">
-        <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
-        <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
-        <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
-        <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+      <section class="clients-list clearfix">
+        <a href="#" class="client-logo"><img src="img/client-1.png" alt=""></a>
+        <a href="#" class="client-logo"><img src="img/client-2.png" alt=""></a>
+        <a href="#" class="client-logo"><img src="img/client-3.png" alt=""></a>
+        <a href="#" class="client-logo"><img src="img/client-4.png" alt=""></a>
       </section>
     </main>
     <footer>
       <section class="main-map">
-        <div class="contacts">
-          <h2>NЁRDS DESIGN STUDIO</h2>
-          <p>
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>
-            тел. +7 (812) 275-75-75
-          </p>
-          <button type="button" class="feedback">НАПИШИТЕ НАМ</button>
+        <div class="container">
+          <div class="contacts">
+            <h2>NЁRDS DESIGN STUDIO</h2>
+            <p>
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
+              тел. +7 (812) 275-75-75
+            </p>
+            <button type="button" class="feedback">НАПИШИТЕ НАМ</button>
+          </div>
         </div>
       </section>
-      <section class="social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="friends">
-        <p class="footer-friends-big">Давайте дружить, это выгодно!</p>
-        <p class="footer-friends-small">Скидка 10% для друзей из социальных сетей.</p>
+      <section class="social-friends container clearfix">
+        <div class="social">
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+        </div>
+        <div class="friends">
+          <p class="footer-friends-big">Давайте дружить, это выгодно!</p>
+          <p class="footer-friends-small">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
   </body>

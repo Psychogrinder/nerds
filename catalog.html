@@ -6,26 +6,28 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="catalog">
+    <header class="index-header">
       <div class="container">
-        <a href="#" class="logo-index">
-          <img src="http://placehold.it/150x100" alt="">
-        </a>
-        <nav>
-          <ul class="index-menu">
-            <li><a href="#">СТУДИЯ</a></li>
-            <li><a href="#">КЛИЕНТЫ</a></li>
-            <li><span>МАГАЗИН</span></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="cart" href="#">КОРЗИНА</a>
+        <div class="upper clearfix">
+          <div class="logo">
+            <img  class="logo-index" src="img/nerds-logo.png" alt="">
+          </div>
+          <nav class="menu">
+            <ul class="index-menu">
+              <li><a href="#">СТУДИЯ</a></li>
+              <li><a href="#">КЛИЕНТЫ</a></li>
+              <li><a href="#">МАГАЗИН</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <div class="cart-block">
+            <a class="login" href="#">КОРЗИНА</a>
+          </div>
         </div>
-        <h1>МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
+        <h1 class="title-catalog">Магазин готовых шаблонов</h1>
       </div>
     </header>
-    <main>
+    <main class="container clearfix">
       <section class="filters">
         <h2>СТОИМОСТЬ:</h2>
         <div class="filter-cost">
@@ -59,7 +61,7 @@
         <label for="cart">Корзина</label>
         <button type="button" class="result">ПОКАЗАТЬ</button>
       </section>
-      <section class="result-templates">
+      <section class="result-templates clearfix">
         <div class="sort-templates">
           <h2>СОРТИРОВАТЬ:</h2>
           <input type="radio" name="sort" id="by-cost" checked>
@@ -72,27 +74,27 @@
           <span class="sort-down"></span>
         </div>
         <div class="template-demo">
-          <img src="http://placehold.it/150x100" alt="">
-          <div class="template-demo-checked">
+          <img src="img/img-sedona.jpg" alt="">
+          <!-- <div class="template-demo checked">
             <h2>SEDONA</h2>
             <span>Информационный сайт для туристов</span>
             <button class="template-btn">9 900 РУБ.</button>
-          </div>
+          </div> -->
         </div>
         <div class="template-demo">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/img-pink.jpg" alt="">
         </div>
         <div class="template-demo">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/img-barbershop.jpg" alt="">
         </div>
         <div class="template-demo">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/img-mishka.jpg" alt="">
         </div>
         <div class="template-demo">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/img-aplus.jpg" alt="">
         </div>
         <div class="template-demo">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/img-kvast.jpg" alt="">
         </div>
         <div class="pages">
           <span class="page-number active">1</span>
@@ -104,26 +106,30 @@
     </main>
     <footer>
       <section class="main-map">
-        <div class="contacts">
-          <h2>NЁRDS DESIGN STUDIO</h2>
-          <p>
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>
-            тел. +7 (812) 275-75-75
-          </p>
-          <button type="button" class="feedback">НАПИШИТЕ НАМ</button>
+        <div class="container">
+          <div class="contacts">
+            <h2>NЁRDS DESIGN STUDIO</h2>
+            <p>
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
+              тел. +7 (812) 275-75-75
+            </p>
+            <button type="button" class="feedback">НАПИШИТЕ НАМ</button>
+          </div>
         </div>
       </section>
-      <section class="social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="friends">
-        <p class="footer-friends-big">Давайте дружить, это выгодно!</p>
-        <p class="footer-friends-small">Скидка 10% для друзей из социальных сетей.</p>
+      <section class="social-friends container clearfix">
+        <div class="social">
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+        </div>
+        <div class="friends">
+          <p class="footer-friends-big">Давайте дружить, это выгодно!</p>
+          <p class="footer-friends-small">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
   </body>
