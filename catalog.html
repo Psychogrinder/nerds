@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Студия Nerds</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -10,13 +12,13 @@
       <div class="container">
         <div class="upper clearfix">
           <div class="logo">
-            <img  class="logo-index" src="img/nerds-logo.png" alt="">
+            
           </div>
           <nav class="menu">
             <ul class="index-menu">
               <li><a href="#">СТУДИЯ</a></li>
               <li><a href="#">КЛИЕНТЫ</a></li>
-              <li><a href="#">МАГАЗИН</a></li>
+              <li><span>МАГАЗИН</span></li>
               <li><a href="#">КОНТАКТЫ</a></li>
             </ul>
           </nav>
@@ -29,75 +31,130 @@
     </header>
     <main class="container clearfix">
       <section class="filters">
-        <h2>СТОИМОСТЬ:</h2>
-        <div class="filter-cost">
-          <div class="outer">
-            <div class="inner"></div>
-            <span class="point"></span>
-            <span class="point"></span>
+        <form action="#" class="filter-nemplates clearfix">
+          <h2>СТОИМОСТЬ:</h2>
+          <div class="filter-cost">
+            <div class="outer">
+              <div class="inner"></div>
+              <span class="point"></span>
+              <span class="point"></span>
+            </div>
+            <span>ОТ</span>
+            <span class="filter-value">0</span>
+            <span>ДО</span>
+            <span class="filter-value">15 000</span>
           </div>
-        </div>
-        <span>ОТ</span>
-        <span class="filter-value">0</span>
-        <span>ДО</span>
-        <span class="filter-value">15 000</span>
-        <h2>СЕТКА:</h2>
-        <input type="radio" name="type" id="adaptive" checked>
-        <label for="adaptive">Адаптивная</label>
-        <input type="radio" name="type" id="fixed">
-        <label for="fixed">Фиксированная</label>
-        <input type="radio" name="type" id="responsive">
-        <label for="responsive">Резиновая</label>
-        <h2>ОСОБЕННОСТИ</h2>
-        <input type="checkbox" name="features" id="slider" checked>
-        <label for="slider">Слайдер</label>
-        <input type="checkbox" name="features" id="advantage">
-        <label for="advantage">Блок преимуществ</label>
-        <input type="checkbox" name="features" id="news" checked>
-        <label for="news">Новости</label>
-        <input type="checkbox" name="features" id="gallery">
-        <label for="gallery">Галерея</label>
-        <input type="checkbox" name="features" id="cart">
-        <label for="cart">Корзина</label>
-        <button type="button" class="result">ПОКАЗАТЬ</button>
+          <h2>СЕТКА:</h2>
+          <div class="filter-item">
+            <input type="radio" name="type" id="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+          </div>
+          <div class="filter-item">
+            <input type="radio" name="type" id="fixed">
+            <label for="fixed">Фиксированная</label>
+          </div>
+          <div class="filter-item">
+            <input type="radio" name="type" id="responsive">
+            <label for="responsive">Резиновая</label>
+          </div>
+          <h2>ОСОБЕННОСТИ:</h2>
+          <div class="filter-item">
+            <input type="checkbox" name="features" id="slider" checked>
+            <label for="slider">Слайдер</label>
+          </div>
+          <div class="filter-item">
+            <input type="checkbox" name="features" id="advantage">
+            <label for="advantage">Блок преимуществ</label>
+          </div>
+          <div class="filter-item">
+            <input type="checkbox" name="features" id="news" checked>
+            <label for="news">Новости</label>
+          </div>
+          <div class="filter-item">
+            <input type="checkbox" name="features" id="gallery">
+            <label for="gallery">Галерея</label>
+          </div>
+          <div class="filter-item">
+            <input type="checkbox" name="features" id="cart">
+            <label for="cart">Корзина</label>
+          </div>
+          <button type="button" class="btn result">ПОКАЗАТЬ</button>
+        </form>
       </section>
       <section class="result-templates clearfix">
         <div class="sort-templates">
-          <h2>СОРТИРОВАТЬ:</h2>
-          <input type="radio" name="sort" id="by-cost" checked>
-          <label for="by-cost">ПО ЦЕНЕ</label>
-          <input type="radio" name="sort" id="by-type">
-          <label for="by-type">ПО ТИПУ</label>
-          <input type="radio" name="sort" id="by-label">
-          <label for="by-label">ПО НАЗВАНИЮ</label>
-          <span class="sort-top"></span>
-          <span class="sort-down"></span>
+          <h2 class="sort-head">СОРТИРОВАТЬ:</h2>
+          <form action="#" class="sort-items">
+            <input type="radio" name="sort" id="by-cost" checked>
+            <label for="by-cost">ПО ЦЕНЕ</label>
+            <input type="radio" name="sort" id="by-type">
+            <label for="by-type">ПО ТИПУ</label>
+            <input type="radio" name="sort" id="by-label">
+            <label for="by-label">ПО НАЗВАНИЮ</label>
+          </form>
+          <form action="#" class="sort-increase">
+            <input type="radio" name="up-down" id="down" class="down-arrow" checked>
+            <label for="down"></label>
+            <input type="radio" name="up-down" id="up" class="up-arrow">
+            <label for="up"></label>
+          </form>
         </div>
         <div class="template-demo">
-          <img src="img/img-sedona.jpg" alt="">
-          <!-- <div class="template-demo checked">
+          <div class="browser"></div>
+          <div class="template-image sedona"></div>
+          <div class="template-demo-checked">
             <h2>SEDONA</h2>
-            <span>Информационный сайт для туристов</span>
-            <button class="template-btn">9 900 РУБ.</button>
-          </div> -->
+            <span>Информационный сайт<br>для туристов</span>
+            <button class="btn template-btn">9 900 РУБ.</button>
+          </div>
         </div>
         <div class="template-demo">
-          <img src="img/img-pink.jpg" alt="">
+          <div class="browser"></div>
+          <div class="template-image pink"></div>
+          <div class="template-demo-checked">
+            <h2>PINK</h2>
+            <span>Информационный сайт<br>для туристов</span>
+            <button class="btn template-btn">9 900 РУБ.</button>
+          </div>
         </div>
         <div class="template-demo">
-          <img src="img/img-barbershop.jpg" alt="">
+          <div class="browser"></div>
+          <div class="template-image barbershop"></div>
+          <div class="template-demo-checked">
+            <h2>BARBERSHOP</h2>
+            <span>Информационный сайт<br>для туристов</span>
+            <button class="btn template-btn">9 900 РУБ.</button>
+          </div>
         </div>
         <div class="template-demo">
-          <img src="img/img-mishka.jpg" alt="">
+          <div class="browser"></div>
+          <div class="template-image mishka"></div>
+          <div class="template-demo-checked">
+            <h2>MISHKA</h2>
+            <span>Информационный сайт<br>для туристов</span>
+            <button class="btn template-btn">9 900 РУБ.</button>
+          </div>
         </div>
         <div class="template-demo">
-          <img src="img/img-aplus.jpg" alt="">
+          <div class="browser"></div>
+          <div class="template-image aplus"></div>
+          <div class="template-demo-checked">
+            <h2>A PLUS</h2>
+            <span>Информационный сайт<br>для туристов</span>
+            <button class="btn template-btn">9 900 РУБ.</button>
+          </div>
         </div>
         <div class="template-demo">
-          <img src="img/img-kvast.jpg" alt="">
+          <div class="browser"></div>
+          <div class="template-image kvast"></div>
+          <div class="template-demo-checked">
+            <h2>KVAST</h2>
+            <span>Информационный сайт<br>для туристов</span>
+            <button class="btn template-btn">9 900 РУБ.</button>
+          </div>
         </div>
         <div class="pages">
-          <span class="page-number active">1</span>
+          <span class="page-active">1</span>
           <a href="#" class="page-number">2</a>
           <a href="#" class="page-number">3</a>
           <a href="#" class="page-next">СЛЕДУЮЩАЯ</a>
@@ -116,7 +173,7 @@
             <p>
               тел. +7 (812) 275-75-75
             </p>
-            <button type="button" class="feedback">НАПИШИТЕ НАМ</button>
+            <button type="button" class="btn feedback">НАПИШИТЕ НАМ</a>
           </div>
         </div>
       </section>
@@ -124,7 +181,7 @@
         <div class="social">
           <a class="social-btn social-btn-vk" href="#"></a>
           <a class="social-btn social-btn-fb" href="#"></a>
-          <a class="social-btn social-btn-inst" href="#"></a>
+          <a class="social-btn social-btn-ig" href="#"></a>
         </div>
         <div class="friends">
           <p class="footer-friends-big">Давайте дружить, это выгодно!</p>
