@@ -398,7 +398,7 @@ span.features{
 .client-2{
   background-image: url(../img/client-2.png);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 50px;
 }
 
 .client-3{
@@ -435,7 +435,7 @@ span.features{
 .client-2:hover{
   background-image: url(../img/client-2-hover.png);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 50px;
 }
 
 .client-3:hover{
