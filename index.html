@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Студия Nerds</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -10,11 +12,11 @@
       <div class="container">
         <div class="upper clearfix">
           <div class="logo">
-            <img  class="logo-index" src="img/nerds-logo.png" alt="">
+
           </div>
           <nav class="menu">
             <ul class="index-menu">
-              <li><a href="#">СТУДИЯ</a></li>
+              <li><span>СТУДИЯ</span></li>
               <li><a href="#">КЛИЕНТЫ</a></li>
               <li><a href="#">МАГАЗИН</a></li>
               <li><a href="#">КОНТАКТЫ</a></li>
@@ -48,7 +50,7 @@
     </header>
     <main class="container">
       <section class="features clearfix">
-        <div class="feature-header web">
+        <div class="feature web">
           <img src="img/feature-image-1.jpg" alt="">
           <span class="features">ВЕБ-САЙТЫ</span>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
@@ -72,7 +74,7 @@
           <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h1>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h2>Выполняем заказы на разработку:</h2>
-          <ul>
+          <ul class="description-list">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -83,26 +85,47 @@
           <h2>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h2>
           <div class="percent-block clearfix">
             <div class="percent">
-              <span class="percent-fig">146%</span>
+              <span class="percent-fig">146</span><sup class="percent-icon">%</sup>
               <p>Уровень самоотдачи</p>
             </div>
             <div class="percent">
-              <span class="percent-fig">100%</span>
+              <span class="percent-fig">100</span><sup class="percent-icon">%</sup>
               <p>Соблюдение сроков</p>
             </div>
             <div class="percent">
-              <span class="percent-fig">50%</span>
+              <span class="percent-fig">50</span><sup class="percent-icon">%</sup>
               <p>Предоплата</p>
             </div>
           </div>
         </div>
       </section>
       <section class="clients-list clearfix">
-        <a href="#" class="client-logo"><img src="img/client-1.png" alt=""></a>
-        <a href="#" class="client-logo"><img src="img/client-2.png" alt=""></a>
-        <a href="#" class="client-logo"><img src="img/client-3.png" alt=""></a>
-        <a href="#" class="client-logo"><img src="img/client-4.png" alt=""></a>
+        <a href="#" class="client-logo client-1"></a>
+        <a href="#" class="client-logo client-2"></a>
+        <a href="#" class="client-logo client-3"></a>
+        <a href="#" class="client-logo client-4"></a>
       </section>
+       <div class="feedback-popup">
+         <p>Напишите нам</p>
+         <button type="button" class="cross"></button>
+         <form action="#">
+          <div class="name-email clearfix">
+            <div class="name-field">
+              <label for="your-name">Ваше имя:</label>
+              <input type="text" id="your-name" name="feedback" class="feedback-name" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="email-field">
+              <label for="e-mail">Ваш e-mail:</label>
+              <input type="text" id="e-mail" name="feedback" class="feedback-email" placeholder="Для отправки ответа">
+            </div>
+          </div>
+          <div class="letter-container">
+            <label>Текст письма:</label>
+            <textarea name="feedback" class="feedback-letter" placeholder="В свободной форме"></textarea>
+          </div>
+          <button type="submit" class="btn feedback-button">ОТПРАВИТЬ</button>
+         </form>
+       </div>
     </main>
     <footer>
       <section class="main-map">
@@ -116,7 +139,7 @@
             <p>
               тел. +7 (812) 275-75-75
             </p>
-            <button type="button" class="feedback">НАПИШИТЕ НАМ</button>
+            <button type="button" class="btn feedback">НАПИШИТЕ НАМ</button>
           </div>
         </div>
       </section>
@@ -124,7 +147,7 @@
         <div class="social">
           <a class="social-btn social-btn-vk" href="#"></a>
           <a class="social-btn social-btn-fb" href="#"></a>
-          <a class="social-btn social-btn-inst" href="#"></a>
+          <a class="social-btn social-btn-ig" href="#"></a>
         </div>
         <div class="friends">
           <p class="footer-friends-big">Давайте дружить, это выгодно!</p>
