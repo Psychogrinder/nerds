@@ -11,9 +11,7 @@
     <header class="index-header">
       <div class="container">
         <div class="upper clearfix">
-          <div class="logo">
-
-          </div>
+          <a href="index.html" class="logo"></a>
           <nav class="menu">
             <ul class="index-menu">
               <li><a href="#">СТУДИЯ</a></li>
@@ -31,19 +29,24 @@
     </header>
     <main class="container clearfix">
       <section class="filters">
-        <form action="#" class="filter-nemplates clearfix">
           <h2>СТОИМОСТЬ:</h2>
-          <div class="filter-cost">
-            <div class="outer">
-              <div class="inner"></div>
-              <span class="point"></span>
-              <span class="point"></span>
+          <form action="form.php" method="GET">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
             </div>
-            <span>ОТ</span>
-            <span class="filter-value">0</span>
-            <span>ДО</span>
-            <span class="filter-value">15 000</span>
-          </div>
+
+
+
           <h2>СЕТКА:</h2>
           <div class="filter-item">
             <input type="radio" name="type" id="adaptive" checked>

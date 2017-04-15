@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="index-header">
+    <header class="header">
       <div class="container">
         <div class="upper clearfix">
-          <div class="logo">
+          <a class="logo-index"></a>
 
-          </div>
+
           <nav class="menu">
             <ul class="index-menu">
               <li><span>СТУДИЯ</span></li>
@@ -27,23 +27,36 @@
           </div>
         </div>
         <div class="slider">
-          <div class="slide slide-first">
-            <div class="slider-left">
-              <span class="moto">Долго, дорого, скрупулезно.</span>
-              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a href="#" class="btn slider-btn">УЗНАТЬ БОЛЬШЕ</a>
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого, скрупулезно</div>
+                <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
             </div>
-          </div>
-          <div class="slide slide-second">
-
-          </div>
-          <div class="slide slide-third">
-
-          </div>
-          <div class="controls">
-            <input type="radio" name="slider" checked>
-            <input type="radio" name="slider">
-            <input type="radio" name="slider">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Дорого, скрупулезно</div>
+                <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Скрупулезно</div>
+                <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -51,19 +64,19 @@
     <main class="container">
       <section class="features clearfix">
         <div class="feature web">
-          <img src="img/feature-image-1.jpg" alt="">
+          <img src="img/feature-image-1.jpg" width="300" height="146" alt="">
           <span class="features">ВЕБ-САЙТЫ</span>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a href="#" class="btn web-btn">ЗАКАЗАТЬ</a>
         </div>
         <div class="feature app">
-          <img src="img/feature-image-2.jpg" alt="">
+          <img src="img/feature-image-2.jpg" width="300" height="146" alt="">
           <span class="features">ПРИЛОЖЕНИЯ</span>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="#" class="btn app-btn">ЗАКАЗАТЬ</a>
         </div>
         <div class="feature presentation">
-          <img src="img/feature-image-3.jpg" alt="">
+          <img src="img/feature-image-3.jpg" width="300" height="146" alt="">
           <span class="features">ПРЕЗЕНТАЦИИ</span>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a href="#" class="btn presentation-btn">ЗАКАЗАТЬ</a>
@@ -81,7 +94,7 @@
           </ul>
         </div>
         <div class="right-block">
-          <img src="img/logo-image-main.png" alt="">
+          <img src="img/logo-image-main.png" width="360" height="208" alt="">
           <h2>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h2>
           <div class="percent-block clearfix">
             <div class="percent">
