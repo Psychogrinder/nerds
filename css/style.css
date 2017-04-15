@@ -80,7 +80,7 @@
   font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: bold;
   color: #000000;
 }
 
@@ -116,6 +116,14 @@ header{
   padding-top: 50px;
 }
 
+.logo-index{
+  float: left;
+  margin-right: 200px;
+  background-image: url(../img/nerds-logo.png);
+  width: 160px;
+  height: 65px;
+}
+
 
 .logo{
   float: left;
@@ -143,7 +151,7 @@ header{
 
 .menu{
   float: left;
-  width: 440px;
+  min-width: 440px;
 }
 
 .index-menu{
@@ -233,6 +241,13 @@ header{
   text-decoration: none;
   font-size: 16px;
   font-family: "Roboto", Arial, sans-serif;
+  cursor: pointer;
+}
+
+a,
+input,
+label{
+  cursor: pointer;
 }
 
 .btn:hover{
@@ -653,6 +668,7 @@ span.features{
 
 .friends{
   float: left;
+  max-width: 762px;
 }
 
 .footer-friends-big{
@@ -828,6 +844,7 @@ textarea{
   text-align: center;
   padding-top: 85px;
   font-size: 55px;
+  line-height: 55px;
 }
 
 .filters{
@@ -838,8 +855,10 @@ textarea{
 }
 
 .range-filter {
-  width: 240px;
-  margin: 50px auto; /* для демонстрации */
+  width: 260px;
+  margin: 40px auto;
+  margin-bottom: 53px;
+
 }
 
 .range-controls {
@@ -889,6 +908,13 @@ textarea{
   font-size: 0;
 }
 
+.min-price,
+.max-price{
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
 .price-controls label {
   font-size: 16px;
   display: inline-block;
@@ -917,8 +943,9 @@ textarea{
 }
 
 .filters h2{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: inline-block;
+  font-weight: bold;
 }
 
 .filters h2:nth-child(4){
@@ -930,8 +957,12 @@ textarea{
   color: #283136;
 }
 
+.filter-item + h2{
+  margin-top: 23px;
+}
+
 .filter-item{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .filter-item input{
@@ -990,6 +1021,24 @@ textarea{
   margin-top: 40px;
   border: 0;
   outline: 0;
+  padding-left: 90px;
+  padding-right: 90px;
+  background-color: #eeeeee;
+  color: #000000;
+  border-top: 3px solid #eeeeee;
+  padding-top: 17px;
+}
+
+.result:hover{
+  background-color: #dfdfdf;
+  border-top: 3px solid #dfdfdf;
+  padding-top: 17px;
+}
+
+.result:active{
+  background-color: #d5d5d5;
+  border-top: 3px solid #bfbfbf;
+  color: #959595;
 }
 
 .sort-templates{
@@ -1003,7 +1052,7 @@ textarea{
 }
 
 .sort-head{
-  margin-right: 230px;
+  margin-right: 265px;
 }
 
 .sort-items input{
@@ -1012,6 +1061,7 @@ textarea{
 
 .sort-items label{
   margin-right: 25px;
+  font-size: 14px;
 }
 
 .sort-items input[type="radio"]:checked + label{
