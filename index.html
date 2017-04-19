@@ -6,6 +6,31 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+        // Создает экземпляр карты и привязывает его к созданному контейнеру
+            var map = new YMaps.Map(document.getElementById("YMapsID"));
+
+            var s = new YMaps.Style();
+
+            // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+            map.setCenter(new YMaps.GeoPoint(30.32175540, 59.93934610), 17);
+
+            s.iconStyle = new YMaps.IconStyle();
+            s.iconStyle.href = "img/map-marker.png";
+            s.iconStyle.size = new YMaps.Point(231, 190);
+            s.iconStyle.offset = new YMaps.Point(-50, -190);
+
+            var placemark = new YMaps.Placemark(new YMaps.GeoPoint(30.32311527,59.93876365), {style: s});
+            placemark.description = "Студия NЁRDS";
+            map.addOverlay(placemark);
+        };
+    </script>
+
+
+    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A309d9b573bbaabdb783b06b98ac49f206193dd8327dca23d290e246e36009a3e&amp;width=100%25&amp;height=415&amp;id=mymap&amp;lang=ru_RU&amp;scroll=true"></script> -->
   </head>
   <body>
     <header class="header">
@@ -121,20 +146,20 @@
        <div class="feedback-popup">
          <p>Напишите нам</p>
          <button type="button" class="cross"></button>
-         <form action="#">
+         <form action="https://echo.htmlacademy.ru" method="post" id="feedback-form">
           <div class="name-email clearfix">
             <div class="name-field">
               <label for="your-name">Ваше имя:</label>
-              <input type="text" id="your-name" name="feedback" class="feedback-name" placeholder="Представьтесь, пожалуйста">
+              <input type="text" id="your-name" name="feedback" class="feedback-name" placeholder="Представьтесь, пожалуйста" >
             </div>
             <div class="email-field">
-              <label for="e-mail">Ваш e-mail:</label>
-              <input type="text" id="e-mail" name="feedback" class="feedback-email" placeholder="Для отправки ответа">
+              <label for="your-email">Ваш e-mail:</label>
+              <input type="text" id="your-email" name="feedback" class="feedback-email" placeholder="Для отправки ответа" >
             </div>
           </div>
           <div class="letter-container">
             <label>Текст письма:</label>
-            <textarea name="feedback" class="feedback-letter" placeholder="В свободной форме"></textarea>
+            <textarea id="your-letter" name="feedback" class="feedback-letter" placeholder="В свободной форме" ></textarea>
           </div>
           <button type="submit" class="btn feedback-button">ОТПРАВИТЬ</button>
          </form>
@@ -142,18 +167,17 @@
     </main>
     <footer>
       <section class="main-map">
-        <div class="container">
-          <div class="contacts">
-            <h2>NЁRDS DESIGN STUDIO</h2>
-            <p>
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8
-            </p>
-            <p>
-              тел. +7 (812) 275-75-75
-            </p>
-            <button type="button" class="btn feedback">НАПИШИТЕ НАМ</button>
-          </div>
+        <div class="yandex-map" id="YMapsID"></div>
+        <div class="contacts">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>
+            тел. +7 (812) 275-75-75
+          </p>
+          <button type="button" class="btn feedback">НАПИШИТЕ НАМ</button>
         </div>
       </section>
       <section class="social-friends container clearfix">
@@ -168,5 +192,9 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
+    <!-- <script type="text/javascript">
+
+    </script> -->
   </body>
 </html>

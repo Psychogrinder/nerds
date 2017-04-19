@@ -571,9 +571,15 @@ span.features{
 }
 
 .main-map{
-  background-image: url(../img/map-main.jpg);
+  /*background-image: url(../img/map-main.jpg);*/
   height: 361px;
   padding-top: 55px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.yandex-map{
+  height: 415px;
 }
 
 .contacts{
@@ -583,6 +589,10 @@ span.features{
   padding-top: 45px;
   padding-left: 45px;
   padding-bottom: 45px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 1;
 }
 
 .contacts p{
@@ -606,7 +616,7 @@ span.features{
 
 .social-friends{
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 55px;
 }
 
 .social{
@@ -694,8 +704,8 @@ span.features{
   position: fixed;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%); /* IE 9 */
-  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   padding-left: 100px;
@@ -704,6 +714,43 @@ span.features{
   padding-bottom: 84px;
   box-shadow: 0 10px 50px 0 rgba(0,0,0,0.7);
   display: none;
+  z-index: 1488;
+}
+
+.feedback-popup-show{
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.feedback-popup-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translate(-50%, -2000px);
+  }
+  70%  {
+    transform: translate(-50%, -30%);
+  }
+  90%  {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate(-50%, -50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-48%, -50%);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate(-52%, -50%);
+  }
 }
 
 .feedback-popup p{
