@@ -47,8 +47,7 @@ form.addEventListener("submit", function(event) {
   }
 });
 
-window.addEventListener("keydown", function(event)
-    {
+window.addEventListener("keydown", function(event){
   if(event.keyCode === 27) {
     if(popup.classList.contains("feedback-popup-show")) {
       popup.classList.remove("feedback-popup-show");
